@@ -1,5 +1,28 @@
 from src.bingo import carton
 
+#Me fijo que la cantidad de celdas no sea mas que 15
+def test1():
+    tarea1 = carton()
+    i = 0
+    for fila in tarea1:
+        for celda in fila:
+            i += celda
+
+    assert i >= 15
+
+#Me fijo que la cantidad de celdas no sea menos que 15
+
+def test2():
+    tarea2 = carton()
+    i = 0
+    for fila in tarea2:
+        for celda in fila:
+            i += celda
+
+    assert i <= 15
+
+#Me fijo que haya almenos una celda ocupada por columna
+
 def test3():
     tarea3 = carton()
 

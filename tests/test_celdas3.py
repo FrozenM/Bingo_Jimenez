@@ -6,6 +6,7 @@ def test3():
     mi_carton2=tarea3[1]
     mi_carton3=tarea3[2]
     i=0
+    #El zip logra hacer una lista de tuplas y el x y z representan al primero, segundo y tercero de la tupla respectivamente
     for x, y, z  in zip(mi_carton1,mi_carton2,mi_carton3):
         if (x==1 or y==1 or z==1):
             i += 1

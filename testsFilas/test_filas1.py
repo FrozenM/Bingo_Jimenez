@@ -23,3 +23,18 @@ def test4():
     assert a > 0
     assert j > 0
     assert k > 0
+
+def test_mayores_a_la_derecha():
+    mi_carton = carton()
+    x = 0
+    y = 9
+    for columna in range(9):
+        for fila in range(3):
+            if mi_carton[fila][columna] != 0:
+                if not(x <= mi_carton[fila][columna] <= y):
+                    return False
+        x += 10
+        y += 10
+        if y == 89:
+            y = 90
+    return True

@@ -67,25 +67,11 @@ def no_haya_filas_vacias(mi_carton):
 #Valida que los numeros varien entre 1 y 90
 
 def uno_noventa(mi_carton):
-
-    mi_carton1=mi_carton[0]
-    mi_carton2=mi_carton[1]
-    mi_carton3=mi_carton[2]
-    for x in mi_carton1:
-        if x >= 0 and x <= 90 :
-          return True
-        else:
-          return False
-    for x in mi_carton2:
-        if x >= 0 and x <= 90 :
-          return True
-        else:
-          return False
-    for x in mi_carton3:
-        if x >= 0 and x <= 90 :
-          return True
-        else:
-          return False
+    for fila in mi_carton:
+        for celda in fila:
+            if not(celda >= 0 and celda <= 90):
+                return False
+    return True
 
 #Valida que los numeros vayan de menor a mayor (por fila)
 

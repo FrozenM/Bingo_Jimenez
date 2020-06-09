@@ -5,7 +5,7 @@ from src import bingo
 mi_carton = bingo.carton
 
 # Guarda la cantidad de celdas ocupadas
-celdas_sean_15 = bingo.contar_celdas_ocupadas(mi_carton)
+celdas_sean_15 = bingo.celdas_sean_15(mi_carton)
 
 # Verifica que la cantidad de celdas ocupadas no sea igual a 15
 def test_15_celdas_ocupadas():

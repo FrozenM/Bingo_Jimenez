@@ -1,6 +1,8 @@
 import random
 import math
 
+#Valida que haya 15 y solo 15 celdas ocupadas 
+
 def celdas_sean_15(mi_carton):
     i = 0
     for fila in mi_carton:
@@ -8,6 +10,8 @@ def celdas_sean_15(mi_carton):
             if celda > 0:
                 i += 1
     return i
+
+#Valida que haya 5 y solo 5 celdas ocupadas porfila
 
 def fila_con_5(mi_carton):
 
@@ -18,6 +22,7 @@ def fila_con_5(mi_carton):
           y += 1 
     return y
 
+#Valida que no haya ninguna columna (la misma celda de las tres filas) vacia, ejemplo 0 0 0.
 
 def no_haya_columnas_vacias(mi_carton):
 
@@ -34,6 +39,8 @@ def no_haya_columnas_vacias(mi_carton):
       return True
     else:
       return False
+
+#Valida que no haya ninguna fila vacia
 
 def no_haya_filas_vacias(mi_carton):
     
@@ -57,6 +64,8 @@ def no_haya_filas_vacias(mi_carton):
     else:
       return False
 
+#Valida que los numeros varien entre 1 y 90
+
 def uno_noventa(mi_carton):
 
     mi_carton1=mi_carton[0]
@@ -78,12 +87,7 @@ def uno_noventa(mi_carton):
         else:
           return False
 
-def celdas_ocupadas_1_a_90(mi_carton):
-    for fila in mi_carton:
-        for celda in fila:
-            if not(celda >= 0 and celda <= 90):
-                return False
-    return True
+#Valida que los numeros vayan de menor a mayor (por fila)
 
 def mayores_a_la_derecha(mi_carton):
     x = 0
@@ -98,6 +102,8 @@ def mayores_a_la_derecha(mi_carton):
         if y == 89:
             y = 90
     return True
+
+#Valida que los numeros vayan de menor a mayor por columna
 
 def columna_may_men(mi_carton):
 
@@ -114,6 +120,8 @@ def columna_may_men(mi_carton):
             return False
     return True
 
+#Valida que no haya numeros repetidos
+
 def no_haya_numero_repetido(mi_carton):
   numeros = set()
   for fila in mi_carton:
@@ -122,6 +130,8 @@ def no_haya_numero_repetido(mi_carton):
         return False
       numeros.add(celda)
   return True
+
+#Valida que no haya ninguna columna con las 3 celdas ocupadas
 
 def no_haya_columna_llena(mi_carton):
 
@@ -133,6 +143,8 @@ def no_haya_columna_llena(mi_carton):
         if (x>=1 and y>=1 and z>=1):
             return False
     return True
+
+#Valida que no haya 3 celdas ocupadas consecutivamente
 
 def sin_3_celdas_ocupadas(mi_carton):
     for fila in mi_carton:
@@ -146,6 +158,8 @@ def sin_3_celdas_ocupadas(mi_carton):
                 return False
     return True
 
+#Valida que no haya 3 celdas vacias consecutivamente
+
 def sin_3_celdas_vacias(mi_carton):
     for fila in mi_carton:
         i = 0
@@ -157,6 +171,8 @@ def sin_3_celdas_vacias(mi_carton):
             if i == 3:
                 return False
     return True
+
+#Valida que haya 3 y solo 3 columnas en donda haya solo 1 celda ocupada
 
 def columna_sola(mi_carton):
 

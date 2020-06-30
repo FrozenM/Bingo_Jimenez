@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.com/FrozenM/Bingo_Jimenez.svg?branch=master)](https://travis-ci.com/FrozenM/Bingo_Jimenez)
 
+[![Coverage Status](https://coveralls.io/repos/github/FrozenM/Bingo_Jimenez/badge.svg?branch=master)](https://coveralls.io/github/FrozenM/Bingo_Jimenez?branch=master)
+
 Estudiante del Instituto Politecnico Superior Gral. San Martin.
 
 Proyecto creado para la materia de Adaptacion del Ambiente del Trabajo encargado de Mariano D'agostino

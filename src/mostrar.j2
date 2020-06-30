@@ -1,0 +1,58 @@
+  
+<!DOCTYPE html>
+<html>
+<canvas id=c></canvas>
+<head>
+
+ <script type="text/javascript" src="script.js"></script>
+
+<style>
+
+canvas {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: black;
+}
+
+.tablero {
+    margin-top: 300px;
+
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    font: 18px Arial, sans-serif;
+}
+
+.fila > div {
+    border:1px;
+    text-align: center;
+    width: 90px;
+    line-height: 85px;
+    margin: 1px;
+    border-style: groove;
+}
+</style>
+
+</head>
+<body>
+<div class='tablero'>
+{% for fila in tablero %}
+    <div class='fila'>
+    {% for celda in fila %}
+        {% if celda == 0 %}
+        <div style='background-color:white;'> <a style='color:white'>{{celda}}</a> </div>
+        {% else %}
+        <div style='background-color:MediumSeaGreen'> {{celda}} </div>
+        {% endif %}
+    {% endfor %}
+    </div>
+{% endfor %}
+</div>
+
+</body>
+</html>

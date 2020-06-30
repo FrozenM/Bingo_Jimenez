@@ -258,5 +258,3 @@ def generar_carton():
   return carton
 
 carton = generar_carton()
-for fila in carton:
-    print(fila)

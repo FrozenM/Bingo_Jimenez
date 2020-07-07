@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/FrozenM/Bingo_Jimenez.svg?branch=master)](https://travis-ci.com/FrozenM/Bingo_Jimenez)
+[![Build Status](https://travis-ci.com/FrozenM/Bingo_Jimenez.svg?branch=master)](https://travis-ci.com/FrozenM/Bingo_Jimenez) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/FrozenM/Bingo_Jimenez/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/FrozenM/Bingo_Jimenez/?branch=master)
 
 [![Coverage Status](https://coveralls.io/repos/github/FrozenM/Bingo_Jimenez/badge.svg?branch=master)](https://coveralls.io/github/FrozenM/Bingo_Jimenez?branch=master)
 
